@@ -1,0 +1,20 @@
+item_name = input('input menu: ')
+Price = int(input('input Price of menu: '))
+Quantity=int(input('input your Quantity: '))
+Total=Price*Quantity
+total_money = int(input('input your money: '))
+return_money = total_money - Total
+
+teks = f'''
+Name menu: {item_name}
+price: {Price}
+Quantity: {Quantity}
+Total Prices: {Total}
+Total Money: {total_money}
+Return:{return_money}
+
+'''
+
+file = open('Nota.txt', 'w')
+
+file.write(teks)
